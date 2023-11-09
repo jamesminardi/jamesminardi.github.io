@@ -6,7 +6,7 @@ tags: [Ethics, Essay]
 ---
 
 
-{% include note.html content="Note: This essay references material provided by my engineering ethics course." %}
+Note: This essay references material provided by my engineering ethics course.
 
 A Code of Ethics, often implemented by companies or discipline organizations such as IEEE,  is a guide for professionals to adhere to that promotes ethical behavior. The IEEE Code of Ethics, for example, is an important tool to guide people through ethical dilemmas, as discussed through Marcus’s situation in “Big Data Issue.” It is often hard to weigh and balance everything when trying to solve an ethical situation, as personal values, job duties, and external interests often clash for various reasons. A Code of Ethics very clearly defines what should be focussed on, thus making it easier to navigate and solve such issues.
 
