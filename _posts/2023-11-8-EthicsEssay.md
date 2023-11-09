@@ -5,6 +5,9 @@ categories: [Engineering]
 tags: [Ethics, Essay]
 ---
 
+
+{% include note.html content="Note: This essay references material provided by my engineering ethics course." %}
+
 A Code of Ethics, often implemented by companies or discipline organizations such as IEEE,  is a guide for professionals to adhere to that promotes ethical behavior. The IEEE Code of Ethics, for example, is an important tool to guide people through ethical dilemmas, as discussed through Marcus’s situation in “Big Data Issue.” It is often hard to weigh and balance everything when trying to solve an ethical situation, as personal values, job duties, and external interests often clash for various reasons. A Code of Ethics very clearly defines what should be focussed on, thus making it easier to navigate and solve such issues.
 
 When confronted with an ethical dilemma, I like to start by categorizing all factors of the situation. This begins by comparing my personal interests and job interests with the five precursors, personal ethical values, and applicable Code of Ethics. Identifying the factors that oppose the above in any form should be noted and looked into further. Oftentimes not every factor can be solved in a satisfying manner, but minimizing the ethical breaches as much as possible is vital. With all ethical dilemmas, there is often an abundance of nuance that allows for several interpretations for approaches as seen by our group discussions.
