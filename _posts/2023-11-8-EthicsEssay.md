@@ -5,7 +5,6 @@ categories: [Engineering]
 tags: [Ethics, Essay]
 ---
 
-
 > Note: This essay references material provided by my engineering ethics course.
 {: .prompt-info }
 

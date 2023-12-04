@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 1
 ---
 Hi, I am James Minardi and this is my personal website. You can view my resume, personal projects, and professional experience here by navigating to the `Categories` tab.
 
@@ -18,9 +18,4 @@ Thank you for checking out my site!
 ## Get in touch
 
 If you would like to get in touch with me, you can reach out via email or LinkedIn using the social icons in the bottom left-hand corner.
-
-
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
-
 
