@@ -4,9 +4,6 @@ icon: fas fa-info-circle
 order: 5
 ---
 
-
-
-
 <html lang="en" style="width:100%; height:100%;">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -18,8 +15,6 @@ order: 5
     <p>To download and view the PDF:  <a href="/resume.pdf">View PDF</a></p>
 
     <embed src="/resume.pdf" style="width:100%; height:1000px; margin:0;">
-
-
 
   </body>
 </html>

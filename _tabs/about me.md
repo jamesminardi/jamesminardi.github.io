@@ -3,9 +3,8 @@
 icon: fas fa-info-circle
 order: 1
 ---
-Hi, I am James Minardi and this is my personal website. You can view my resume, personal projects, and professional experience here by navigating to the `Categories` tab.
 
-# About Me
+Hi, I am James Minardi and this is my personal website. You can read about my projects by navigating to the [`Categories`](/categories) tab.
 
 As an experienced Computer Engineering student at Iowa State University, I am passionate about developing innovative and cutting-edge solutions for computer graphics, and GPU & ML Architecture. I have gained a solid foundation in these areas through my coursework, personal projects, and professional experience.
 
@@ -15,7 +14,7 @@ In my free time I enjoy playing volleyball, riding my motorcycle, listening to m
 
 Thank you for checking out my site!
 
-## Get in touch
+### Contact
 
 If you would like to get in touch with me, you can reach out via email or LinkedIn using the social icons in the bottom left-hand corner.
 
