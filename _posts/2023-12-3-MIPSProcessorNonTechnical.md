@@ -2,7 +2,7 @@
 title: MIPS Processor (Non-Technical)
 date: 2023-12-3
 categories: [Projects, MIPS Processor]
-tags: [Computer Architecture, VHDL]
+tags: [Computer Architecture, VHDL, Assembly, Optimization, ModelSim, Quartus Prime]
 ---
 
 
