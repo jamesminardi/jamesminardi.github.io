@@ -7,3 +7,6 @@ tags: [Computer Architecture, VHDL]
 
 > This is a technical description of my MIPS processor project. To read from a non-technical perspective, check out [MIPS Processor (Non-Technical)](../MIPSProcessorNonTechnical).
 {: .prompt-info }
+
+> WIP
+{: .prompt-warning }

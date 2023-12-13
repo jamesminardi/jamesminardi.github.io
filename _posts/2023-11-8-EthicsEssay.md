@@ -2,7 +2,7 @@
 title: Ethics Essay
 date: 2023-10-13
 categories: [Engineering]
-tags: [Ethics, Essay]
+tags: [Essay]
 ---
 
 > Note: This essay references material provided by my engineering ethics course.
