@@ -16,7 +16,7 @@ This write-up showcases an in depth exploration of three different processor des
 
 The primary objective was to create functioning MIPS assembly processors with schematic designs, control spreadsheets, and VHDL implementation. The single-cycle processor, built first, introduced us to novel concepts in computer architecture design. The design, components, and tests were all created from scratch, and  subsequent processors based on the single-cycle design aimed to optimize performance through pipeline strategies and hazard mitigation.
 
-A set of test benches were compiled in order to determine the performance of each of the three processor designs. Each one demonstrates a set of advantages and disadvantages that much be considered when choosing one implementation over another.
+A set of test benches were compiled in order to determine the performance of each of the three processor designs. Each one demonstrates a set of advantages and disadvantages that must be considered when choosing one implementation over another.
 
 ## 2 Instruction Set
 **Produce**: Change registers or memory
