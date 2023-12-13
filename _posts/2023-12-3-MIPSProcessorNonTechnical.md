@@ -11,7 +11,7 @@ tags: [Computer Architecture, VHDL]
 
 
 ### About
-This project showcases an in-depth exploration of three different processor designs: a single-cycle design, a software-scheduled pipeline, and a hardware-scheduled pipeline. Each processor underwent careful design, implementation, and performance analysis, highlighting the practical applications and tradeoffs involved in computer architecture.
+This writeup showcases a simple overview of three different processor designs: a single-cycle design, a software-scheduled pipeline, and a hardware-scheduled pipeline. Each processor underwent careful design, implementation, and performance analysis, highlighting the practical applications and tradeoffs involved in computer architecture.
 
 The primary objective was to create functioning MIPS assembly processors with schematic designs, control spreadsheets, and VHDL implementation. The single-cycle processor, built first, introduced us to novel concepts in computer architecture design. Subsequent processors, based on the single-cycle design, aimed to optimize performance through pipeline strategies and hazard mitigation.
 

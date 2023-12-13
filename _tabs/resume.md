@@ -12,9 +12,9 @@ order: 5
 
   <body style="width:100%; height:100%; margin:0;">
 
-    <p>To download and view the PDF:  <a href="/resume.pdf">View PDF</a></p>
+    <p>To download and view the PDF:  <a href="/assets/resume.pdf">View PDF</a></p>
 
-    <embed src="/resume.pdf" style="width:100%; height:1000px; margin:0;">
+    <embed src="/assets/resume.pdf" style="width:100%; height:1000px; margin:0;">
 
   </body>
 </html>
