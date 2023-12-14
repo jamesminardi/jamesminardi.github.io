@@ -21,6 +21,9 @@ A set of test benches were compiled in order to determine the performance of eac
 #### [View the source code](https://github.com/jamesminardi/mips-pipeline-processor) 
 
 ## 2 Instruction Set
+
+These processors support a limited MIPS instruction set seen below. 
+
 **Produce**: Change registers or memory
 
 **Consume**: Access registers or memory
@@ -29,6 +32,8 @@ A set of test benches were compiled in order to determine the performance of eac
 
 ### Control Logic
 
+Each instruction was broken down into the required signals to operate correctly.
+
 <img src="/assets/processor/control_logic.png" style="width:100%; height:100%; margin:0;" alt="">
 
 
@@ -36,8 +41,11 @@ A set of test benches were compiled in order to determine the performance of eac
 
 ## 3 Single-Cycle Processor
 ### 3.1 Design
-### 3.2 HW Optimization
+This processor is a single-cycle design that aims to perform one instruction in just one cycle of the CPU. There are several advantages and disadvantages of a design like this. The design is rather straightforward, but because the cycle time is fixed to the slowest instruction, faster instructions cannot execute more quickly.
+
 ### 3.2 Benchmarks
+
+
 <img src="/assets/processor/ss_benchmark.png" style="width:80%; height:80%; margin:0;" alt="">
 
 |   **Test**   | **# Instr** | **# Cycles** | **CPI** | **Cycle Time** | **Ex Time** |
@@ -46,6 +54,21 @@ A set of test benches were compiled in order to determine the performance of eac
 | _Bubblesort_ |     380     |     380      |  1.00   |     49.80      |   18,924    |
 |  _Grendel_   |    2,115    |    2,114     |  1.00   |     49.80      |   105,327   |
 |              |             |              |         |      *ns*      |    *ns*     |
+
+
+
+
+### 3.3 HW Optimization
+For the single-cycle design, the Cycles Per Instruction (CPI) is one. This is ideal, so to optimize this processor, other factors have to be considered. In particular, the cycle time is limited by the critical path of the processor. The critical path is the path an instruction takes through the processor that takes the longest amount of time. For this design, the longest path is through the ALU.
+
+In its current form, the ALU uses a simple ripple carry adder that is the slowest component outside of memory access. The latency comes from the propagation delay of the carry bits, as one adder can't compute until the previous adder's carry bit is produced.
+
+<img src="/assets/processor/ripple_adder.png" style="width:80%; height:80%; border:3px solid darkgrey; margin: 0 0 10px 0;" alt="">
+
+
+A carry-lookahead adder solves this problem by computing whether a carry will be generated before it actually computes the sum. Below is an example of one design, although the benefits are only seen for larger computations. This would significantly decrease the latency of the ALU and improve the critical path of the processor. A lookahead adder would significantly decrease the latency of the ALU and improve the critical path of the processor, but would increase the area and power required.
+
+<img src="/assets/processor/lookahead_adder.png" style="width:80%; height:80%; border:3px solid darkgrey; margin: 0 0 0 0;" alt="">
 
 
 ## 4 Software Scheduled Pipeline Processor
