@@ -2,7 +2,7 @@
 title: WebGPU Game of Life
 date: 2023-12-3
 categories: [Projects, WebGPU]
-tags: [Computer Graphics]
+tags: [Computer Graphics, C++, Web]
 ---
 
 
