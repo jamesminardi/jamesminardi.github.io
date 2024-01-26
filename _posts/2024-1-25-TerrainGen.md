@@ -45,7 +45,7 @@ During my first week, I spent most of my time learning the API. I first created 
 
 I learned several things during this part, including how to debug buffer data, meshes, and textures on the GPU using [RenderDoc](https://renderdoc.org/).
 
-![img_1.png](img_1.png)
+<img src="/assets/terraingen/3d_cube.png" style="width:100%; height:100%; border:3px solid darkgrey; margin: 0 0 10px 0;" alt="">
 
 At this point a camera controller can now be built.
 
