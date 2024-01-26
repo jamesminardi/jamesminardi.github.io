@@ -19,24 +19,24 @@ This write-up showcases an in depth exploration of procedural terrain generation
 WebGPU is the modern successor to [WebGL](https://www.khronos.org/webgl/), providing far better compatibility with modern GPUs, support for GP GPU computations, and access for more advanced GPU features on the web. C++ implementations of the API, such as Google's [Dawn](https://dawn.googlesource.com/dawn) or [WGPU-native](https://wgpu.rs/) can be used to write cross-platform desktop applications and still build to the web using Emscripten. WebGPU has several layers of abstraction, but most notably it adapts to the device's native GPU API including DirectX, Vulkan, OpenGL, and Metal. Overall, WebGPU has a similar learning curve, more modern GPU features, and greater device compatibility compared to OpenGL/WebGL.
 
 ### Roadmap
-
+{% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 1. Camera Controller (zoom, click to drag, etc.)
 2. Dev GUI
-2. Generate plane meshes of configurable sizes
-3. Adjust mesh using noise as a heightmap 
+3. Generate plane meshes of configurable sizes
+4. Adjust mesh using noise as a heightmap 
    - Explore Value, Perlin, Simplex, and Cubic noise varieties.
    - Sample multiple noises at once (Fractional Brownian Motion)
    - Adjust noises individually including scale, amplitude, etc.
-4. Color map the terrain based on height, steepness, etc.
-5. Dynamically load and unload chunks of terrain
-6. Dynamically adjust level of detail a quadtree, clip maps, etc.
-7. Cull the terrain using frustum and occlusion
-8. Atmospheric effects
+5. Color map the terrain based on height, steepness, etc.
+6. Dynamically load and unload chunks of terrain
+7. Dynamically adjust level of detail a quadtree, clip maps, etc.
+8. Cull the terrain using frustum and occlusion
+9. Atmospheric effects
    - Lighting
    - Skybox
-9. Vegetation
-10. Water
-11. Post Processing Effects
+10. Vegetation
+11. Water
+12. Post Processing Effects
 
 
 ## Week 0: Learning WebGPU
