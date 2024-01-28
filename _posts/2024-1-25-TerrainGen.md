@@ -92,10 +92,12 @@ I built the 2D mesh generator using a vertex lattice written left to right, bott
 The mesh must be regenerated when the size or wireframe mode is changed. Since WebGPU does not have a native wireframe toggle, the index data must be recalculated using line segments instead of triangles.
 
 <center>
-<video src="https://private-user-images.githubusercontent.com/77563712/300237318-84b373e1-fa36-422c-af26-741b50f8527d.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY0MTg4NzQsIm5iZiI6MTcwNjQxODU3NCwicGF0aCI6Ii83NzU2MzcxMi8zMDAyMzczMTgtODRiMzczZTEtZmEzNi00MjJjLWFmMjYtNzQxYjUwZjg1MjdkLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI4VDA1MDkzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk3N2Q2OTAyOTEwNGNlZDU4MDFiN2Y3ZDE3NTRkMjM4NjlhNmI1ZDZkNTFkMDZjZGE4Y2MyNWU4ZjQ3YThkOTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.KxbFwfMaVRTk_vORZN5vSMlG4_NIlulp47QrsMHu97c" controls="controls" style="max-height:640px; min-height: 200px"> </video>
+<figure>
+<video src="/assets/terraingen/2d_mesh.mp4" controls="controls" style="max-height:640px; min-height: 200px"> </video>
+<figcaption>Demo of camera system and 2D mesh creation.</figcaption>
+</figure>
 </center>
 
-_Demo of camera system and 2D mesh creation._
 
 ## References
 
