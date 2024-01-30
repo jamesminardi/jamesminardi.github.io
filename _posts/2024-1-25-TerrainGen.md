@@ -87,8 +87,6 @@ These values are then converted to cartesian coordinates (x, y, z), correspondin
 
 To generate a 2D plane, the vertices are written left to right, bottom to top. An index buffer is then used to look up the vertices for any given triangle. This removes the need to repeat floating point vertex values when they are shared among multiple triangles.
 
-I built the 2D mesh generator using a vertex lattice written left to right, bottom to top. An index buffer is then used to look up the vertices for any given triangle. This removes the need to repeat floating point vertex values when they are shared among multiple triangles.
-
 The mesh must be regenerated when the size or wireframe mode is changed. Since WebGPU does not have a native wireframe toggle, the index data must be recalculated using line segments instead of triangles.
 
 <center>
