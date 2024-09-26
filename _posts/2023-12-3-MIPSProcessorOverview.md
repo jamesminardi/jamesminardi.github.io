@@ -1,12 +1,12 @@
 ---
-title: MIPS Processor (Non-Technical)
-date: 2023-12-3
+title: MIPS Processor (Overview)
+date: 2022-5-6
 categories: [Projects, MIPS Processor]
 tags: [Computer Architecture, VHDL, Assembly, Optimization, ModelSim, Quartus Prime]
 ---
 
 
-> This is a non-technical description of my MIPS processor project. To read more from a technical perspective, check out [MIPS Processor (Technical)](../MIPSProcessorTechnical).
+> This is a non-technical overview of my MIPS processor project. To read more from a technical perspective, check out [MIPS Processor (Technical)](../MIPSProcessorTechnical).
 {: .prompt-info }
 
 
