@@ -48,7 +48,7 @@ The top-most portion of this diagram is the fetch logic, which accounts for the 
 ### 3.2 Benchmarks
 As expected, the single-cycle design executes each test in the same amount of cycles as there are instructions, resulting in a CPI of one. The cycle time however showcases that the critical path of the processor is 49.80ns.
 
-<img src="/assets/processor/ss_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">
+[//]: # (<img src="/assets/processor/ss_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">)
 
 |   **Test**   | **# Instructions** | **# Cycles** | **Cycles Per Instruction** | **Cycle Time** | **Execution Time** |
 |:------------:|:------------------:|:------------:|:--------------------------:|:--------------:|:------------------:|
@@ -79,7 +79,7 @@ The design diagram is largely identical to the hardware scheduled pipeline proce
 
 ### 4.2 Benchmarks
 
-<img src="/assets/processor/sw_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">
+[//]: # (<img src="/assets/processor/sw_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">)
 
 |   **Test**   | **# Instructions** | **# Cycles** | **Cycles Per Instruction** | **Cycle Time** | **Execution Time** |
 |:------------:|:------------------:|:------------:|:--------------------------:|:--------------:|:------------------:|
@@ -111,7 +111,8 @@ The ability to detect control hazards was implemented into the forwarding logic,
 
 
 #### 5.1.3 Control Hazard Avoidance
-<img src="/assets/processor/control_hazard.png" style="width:90%; height:90%; border:3px solid white; margin:0;" alt="">
+
+[//]: # (<img src="/assets/processor/control_hazard.png" style="width:90%; height:90%; border:3px solid white; margin:0;" alt="">)
 
 
 | **Instruction** | **Stage of PC Update** |             **Stall/Flush**             |
@@ -126,7 +127,8 @@ All the branch and jump instructions have the potential to cause a control flow 
 
 
 ### 5.2 Benchmarks
-<img src="/assets/processor/hw_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">
+
+[//]: # (<img src="/assets/processor/hw_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">)
 
 |   **Test**   | **# Instructions** | **# Cycles** | **Cycles Per Instruction** | **Cycle Time** | **Execution Time** |
 |:------------:|:------------------:|:------------:|:--------------------------:|:--------------:|:------------------:|
@@ -157,7 +159,7 @@ While the average CPI might be higher than the other two processor designs, it i
 
 ### 6.2 Branch Sequence Test
 
-<img src="/assets/processor/branch_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">
+[//]: # (<img src="/assets/processor/branch_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">)
 
 |   **Test**    | **# Instr** | **# Cycles** | **CPI** | **Cycle Time** | **Execution Time** |
 |:-------------:|:-----------:|:------------:|:-------:|:--------------:|:------------------:|
