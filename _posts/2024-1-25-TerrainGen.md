@@ -80,7 +80,7 @@ void Application::onScroll(vec2 scrollOffset) {
 
 
 The camera is defined using [spherical coordinates](https://en.wikipedia.org/wiki/Spherical_coordinate_system) (r, theta, phi), where `r` is the distance to the center, `theta` is the rotation about the vertical y-axis, and `phi` is the rotation about the horizontal plane.
-
+ 
 These values are then converted to cartesian coordinates (x, y, z), corresponding to the camera's position. The GLM function `lookAt` is then used to rotate the camera towards a fixed point (in this case the world origin).
 
 ## Week 2: The Plane

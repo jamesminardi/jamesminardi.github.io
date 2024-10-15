@@ -5,6 +5,18 @@ categories: [Projects, MIPS Processor]
 tags: [Computer Architecture, VHDL, Assembly, Optimization, ModelSim, Quartus Prime]
 ---
 
+<style>
+img
+{
+    display:block;
+    float:none;
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    border:3px solid white;
+}
+</style>
+
 > This is a technical description of my MIPS processor project. To read from a non-technical perspective, check out [MIPS Processor (Overview)](../MIPSProcessorOverview).
 {: .prompt-info }
 
@@ -21,7 +33,7 @@ A set of test benches were compiled to analyze the performance of each of the th
 
 These processors support a limited MIPS instruction set seen below.
 
-<img src="/assets/processor/instruction_set.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">
+<img src="/assets/processor/instruction_set.png" alt="">
 
 **Produce**: Changes registers or memory
 
@@ -31,7 +43,7 @@ These processors support a limited MIPS instruction set seen below.
 
 Each instruction was broken down into the required signals to operate correctly.
 
-<img src="/assets/processor/control_logic.png" style="width:100%; height:100%; border:3px solid white; margin:0;" alt="">
+<img src="/assets/processor/control_logic.png" style="width:100%; height:100%;" alt="">
 
 The fetch logic, responsible for reading the instruction memory, must support branch and jump instructions as they do not follow the consistent PC+4 that most other instructions do. These functions include: BNE, BEQ, Jal, J, JR. Each of these instructions behave differently. The Jump and Link instruction, for example, the PC+4 address must be written to the register file. The Jump Register needs to read an address from the register file into the fetch logic path.
 
@@ -41,14 +53,14 @@ The fetch logic, responsible for reading the instruction memory, must support br
 This processor is a single-cycle design that aims to perform one instruction in a single cycle of the CPU. There are several advantages and disadvantages of a design like this. The design is rather straightforward, but because the cycle time is fixed to the slowest instruction, faster instructions cannot execute more quickly.
 
 #### 3.1.1 Design Diagram
-<img src="/assets/processor/single_cycle_diagram.jpg" style="width:90%; height:90%; border:3px solid white; margin:0;" alt="">
+
+![](/assets/processor/single_cycle_diagram.jpg)
+
 
 The top-most portion of this diagram is the fetch logic, which accounts for the branch and jump instructions described in [Control Logic](#2-control-logic). In future iterations, the fetch logic is placed in its own submodule.
 
 ### 3.2 Benchmarks
 As expected, the single-cycle design executes each test in the same amount of cycles as there are instructions, resulting in a CPI of one. The cycle time however showcases that the critical path of the processor is 49.80ns.
-
-[//]: # (<img src="/assets/processor/ss_benchmark.png" style="width:80%; height:80%; border:3px solid white; margin:0;" alt="">)
 
 |   **Test**   | **# Instructions** | **# Cycles** | **Cycles Per Instruction** | **Cycle Time** | **Execution Time** |
 |:------------:|:------------------:|:------------:|:--------------------------:|:--------------:|:------------------:|
@@ -169,9 +181,6 @@ While the average CPI might be higher than the other two processor designs, it i
 
 
 In all of our test benches, the hardware pipeline outperformed the single cycle design. However, there is a very specific sequence of instructions that can result in the opposite result. On the single cycle design, a branch or jump register instruction that is dependent on the immediately preceding instruction has a CPI of one. On the other hand, the hardware scheduled pipeline design must stall the dependency out of the pipeline for up to three cycles, and it must flush the instruction following the branch. This results in a CPI of three. The test result above confirms this.
-
-While this scenario 
-
 
 ## 7 Conclusion
 
