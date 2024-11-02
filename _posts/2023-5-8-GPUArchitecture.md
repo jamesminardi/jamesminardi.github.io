@@ -5,17 +5,6 @@ categories: [Projects, GPU Architecture]
 tags: [Computer Architecture, VHDL, C++, FPGA, Xilinx Vivado, AMBA (AXI), OpenGL]
 pin: true
 ---
-<style>
-img
-{
-    display:block;
-    float:none;
-    margin-left:auto;
-    margin-right:auto;
-    width:80%;
-    border:3px solid white;
-}
-</style>
 
 > Post is under construction
 {: .prompt-warning }
@@ -44,15 +33,20 @@ A fully-functional, OpenGL-compliant graphics processor (SGP) using an FPGA-base
 
 ## OpenGL Drivers
 
-In order to effectively test OpenGL application on the FPGA, OpenGL calls are executed on both the FPGA and the workstation graphics card simultaneously. Any OpenGL application that can run on the workstation can use the SGP with little to no software changes. The figure below shows a diagram of the library structure to support this feature.
+In order to effectively test OpenGL application on the FPGA, OpenGL calls are executed on both the FPGA and the workstation graphics card simultaneously. Any OpenGL application that can run on the workstation can use the SGP with little t\o no software changes. The figure below shows a diagram of the library structure to support this feature.
 
-![](/assets/openglgpu/OpenGLDriver1.jpg)
+<center>
+<figure>
+<img src="/assets/openglgpu/OpenGLDriver1.jpg" style="width:80%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
+<figcaption></figcaption>
+</figure>
+</center>
 
 The open source project, [apitrace](https://apitrace.github.io/), was utilized to intercept and pass all OpenGL API calls to both devices. It was trimmed down and heavily modified to support transferring data to the SGP.
 
 ## System Diagram
 
-<img src="/assets/openglgpu/system_diagram.jpg" style="width:100%; height:100%;" alt="">
+<img src="/assets/openglgpu/system_diagram.jpg" style="width:100%; height:100%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 
 ### System Diagram Notes
 
@@ -83,35 +77,35 @@ Several test applications were created to test full or individual systems in the
 
 <center>
 <figure>
-<img src="/assets/openglgpu/demo_alpha.jpg" style="width:140%; height:140%;" alt="">
+<img src="/assets/openglgpu/demo_alpha.jpg" style="width:140%; height:140%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 <figcaption>Alpha blending</figcaption>
 </figure>
 </center>
 
 <center>
 <figure>
-<img src="/assets/openglgpu/demo_cube.jpg" style="width:140%; height:140%;" alt="">
+<img src="/assets/openglgpu/demo_cube.jpg" style="width:140%; height:140%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 <figcaption>Depth testing & precision handling</figcaption>
 </figure>
 </center>
 
 <center>
 <figure>
-<img src="/assets/openglgpu/demo_fractal.jpg" style="width:140%; height:140%;" alt="">
+<img src="/assets/openglgpu/demo_fractal.jpg" style="width:140%; height:140%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 <figcaption>Fractal using points primitive</figcaption>
 </figure>
 </center>
 
 <center>
 <figure>
-<img src="/assets/openglgpu/demo_sierpinski.jpg" style="width:140%; height:140%;" alt="">
+<img src="/assets/openglgpu/demo_sierpinski.jpg" style="width:140%; height:140%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 <figcaption>Sierpinski triangle using points primitive</figcaption>
 </figure>
 </center>
 
 <center>
 <figure>
-<img src="/assets/openglgpu/demo_seal.JPG" style="width:140%; height:140%;" alt="">
+<img src="/assets/openglgpu/demo_seal.JPG" style="width:140%; height:140%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 <figcaption>Higher primitive count model of a seal with blinn-phong lighting model</figcaption>
 </figure>
 </center>
@@ -121,21 +115,21 @@ Several test applications were created to test full or individual systems in the
 
 <center>
 <figure>
-<img src="/assets/openglgpu/demo_bug_colorwheel.png" style="width:140%; height:140%;" alt="">
-<figcaption>Demo of camera system and 2D mesh creation.</figcaption>
+<img src="/assets/openglgpu/demo_bug_colorwheel.png" style="width:140%; height:140%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
+<figcaption></figcaption>
 </figure>
 </center>
 
 <center>
 <figure>
-<img src="/assets/openglgpu/demo_bug_tree.JPG" style="width:30%; height:30%;" alt="">
-<figcaption>Demo of camera system and 2D mesh creation.</figcaption>
+<img src="/assets/openglgpu/demo_bug_tree.JPG" style="width:30%; height:30%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
+<figcaption>Interesting wood-like pattern caused by overflow of shader functions</figcaption>
 </figure>
 </center>
 
 <center>
 <figure>
-<img src="/assets/openglgpu/demo_bug_snowflake.png" style="width:200%; height:200%;" alt="">
-<figcaption>Demo of camera system and 2D mesh creation.</figcaption>
+<img src="/assets/openglgpu/demo_bug_snowflake.png" style="width:200%; height:200%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
+<figcaption></figcaption>
 </figure>
 </center>

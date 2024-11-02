@@ -1,7 +1,7 @@
 ---
 title: Terrain Generation
 date: 2024-1-25
-categories: [Projects, WebGPU]
+categories: [Projects]
 tags: [Computer Graphics, C++, Web, Windows, Linux]
 ---
 

@@ -5,18 +5,6 @@ categories: [Projects, MIPS Processor]
 tags: [Computer Architecture, VHDL, Assembly, Optimization, ModelSim, Quartus Prime]
 ---
 
-<style>
-img
-{
-    display:block;
-    float:none;
-    margin-left:auto;
-    margin-right:auto;
-    width:90%;
-    border:3px solid white;
-}
-</style>
-
 > This is a technical description of my MIPS processor project. To read from a non-technical perspective, check out [MIPS Processor (Overview)](../MIPSProcessorOverview).
 {: .prompt-info }
 
@@ -43,7 +31,7 @@ These processors support a limited MIPS instruction set seen below.
 
 Each instruction was broken down into the required signals to operate correctly.
 
-<img src="/assets/processor/control_logic.png" style="width:100%; height:100%;" alt="">
+<img src="/assets/processor/control_logic.png" style="width:100%; height:100%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white; " alt="">
 
 The fetch logic, responsible for reading the instruction memory, must support branch and jump instructions as they do not follow the consistent PC+4 that most other instructions do. These functions include: BNE, BEQ, Jal, J, JR. Each of these instructions behave differently. The Jump and Link instruction, for example, the PC+4 address must be written to the register file. The Jump Register needs to read an address from the register file into the fetch logic path.
 
@@ -54,8 +42,7 @@ This processor is a single-cycle design that aims to perform one instruction in 
 
 #### 3.1.1 Design Diagram
 
-![](/assets/processor/single_cycle_diagram.jpg)
-
+<img src="/assets/processor/single_cycle_diagram.jpg" style="display:block; float:none; margin-left:auto; margin-right:auto; width:90%; border:3px solid white; " alt="">
 
 The top-most portion of this diagram is the fetch logic, which accounts for the branch and jump instructions described in [Control Logic](#2-control-logic). In future iterations, the fetch logic is placed in its own submodule.
 
@@ -75,12 +62,12 @@ Since the CPI can't be improved, other factors have to be considered for optimiz
 
 In its current form, the ALU uses a simple ripple carry adder that is the slowest component outside of memory access. The latency comes from the propagation delay of the carry bits, as one adder can't compute until the previous adder's carry bit is produced.
 
-<img src="/assets/processor/ripple_adder.png" style="width:80%; height:80%; border:3px solid white; margin: 0 0 10px 0;" alt="">
+<img src="/assets/processor/ripple_adder.png" style="width:80%; height:80%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white; " alt="">
 
 
 A carry-lookahead adder solves this problem by computing whether a carry will be generated before it actually computes the sum. Below is an example of one design, although the benefits are only seen for larger computations. This would significantly decrease the latency of the ALU and improve the critical path of the processor. A lookahead adder would significantly decrease the latency of the ALU and improve the critical path of the processor, but would increase the area and power required.
 
-<img src="/assets/processor/lookahead_adder.png" style="width:80%; height:80%; border:3px solid white; margin: 0 0 0 0;" alt="">
+<img src="/assets/processor/lookahead_adder.png" style="width:80%; height:80%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 
 
 ## 4 Software Scheduled Pipeline Processor
@@ -112,10 +99,10 @@ The critical path of this processor design is the execution stage, which include
 ### 5.1 Design
 The hardware scheduled pipeline processor features the same 5 stages as the software scheduled variant with the addition of hazard mitigation techniques. The purpose of automatic stalling and forwarding improves the performance of the processor by decreasing the number of wasted cycles that the software-scheduled has.
 #### 5.1.1 Design Diagram
-<img src="/assets/processor/hardware_diagram.jpg" style="width:90%; height:90%; border:3px solid white; margin:0;" alt="">
+<img src="/assets/processor/hardware_diagram.jpg" style="width:90%; height:90%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 
 #### 5.1.2 Data Hazard Avoidance
-<img src="/assets/processor/data_hazard.png" style="width:90%; height:90%; border:3px solid white; margin:0;" alt="">
+<img src="/assets/processor/data_hazard.png" style="width:90%; height:90%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 
 The diagram above depicts five data hazards that can ocurr in the design. Four can be forwarded, and three must trigger a single stall.
 
@@ -163,7 +150,7 @@ Of the 66 total branch instructions executed in the bubble sort test bench, it c
 ## 6 Analysis
 
 ### 6.1 Execution Times
-<img src="/assets/processor/test_bench.png" style="width:90%; height:90%; border:3px solid white; margin:0;" alt="">
+<img src="/assets/processor/test_bench.png" style="width:90%; height:90%; display:block; float:none; margin-left:auto; margin-right:auto; border:3px solid white;" alt="">
 
 The hardware scheduled pipeline, as mentioned earlier, shows great performance gains over the other two designs. Compared to the single cycle design, it pulls a 30-60% increase in speed among our three test benches. The relatively low instruction count, CPI, and cycle time all contribute to this performance improvement.
 

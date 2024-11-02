@@ -1,8 +1,8 @@
 ---
 title: Ethics Essay
 date: 2023-10-13
-categories: [Engineering]
-tags: [Essay]
+categories: [Engineering, Essays]
+tags: []
 hidden: 1
 ---
 
